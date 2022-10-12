@@ -1,12 +1,12 @@
 #!python3
 
-
-def getIntegers(myList):
+def getIntegers(mylist):
+    easy2 = mylist
     # myList : expected list or tuple
     # iterate through myList and add all the integers to the new list
-    integers = []
-
-    return integers
+    mylist.append(mylist)
+ 
+    return mylist
 
 def getFactor(myList,factor):
     # myList : expected list or tuple
@@ -58,8 +58,7 @@ def main():
     easy2 = [-2,-4,-6,2,4,6,0.1]
     numbers1 = [3,5,8,12,11,19,10,7,2,15,25,34,16,32,50,60,100,-3,0.25]
     numbers2 = [3,7,11,15,19,23,27,31,35,39,44,50]
-
-
+    print(getIntegers(easy2))
 
 if __name__ == "__main__":
     main()
